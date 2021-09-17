@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/Room1.unity
+    guid: 7da1dc03216bf5246921da48c861ebb3
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/RoomWallBack.unity
+    guid: 61a9c61423a9806488d199501d703747
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/RoomWallLeft.unity
+    guid: a91022e55cee9734aa21998e50753075
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/RoomWallRight.unity
+    guid: dc37a468f9805e147b913ebd69cd3e78
   m_configObjects: {}
