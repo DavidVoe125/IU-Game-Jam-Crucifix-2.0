@@ -34,6 +34,8 @@ public class ItemManager : MonoBehaviour
         // Wenn die rechte Maustaste gehalten wird
         if (isBeingHeld == true)
         {
+            PlayerPrefs.SetInt("isBeingHeld", 1);
+
             // Maus-Position wird geholt
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -104,7 +106,9 @@ public class ItemManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         { 
             isBeingHeld = false;
-            
+
+            PlayerPrefs.SetInt("isBeingHeld", 0);
+
             // Gravity Scale wird zurückgesetzt
             itemRb.gravityScale = itemGrav;
         }
