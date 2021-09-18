@@ -1,126 +1,126 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'de' Physical Memory: 16326 MB
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'de' Physical Memory: 16317 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-S:\Programme\Unity Versions\2020.3.18f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-S:/Program-Work/GitHub/IU-Game-Jam-Crucifix-2.0
+D:/GitHub/Neuer Ordner/IU-Game-Jam-Crucifix-2.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55972
-Successfully changed project path to: S:/Program-Work/GitHub/IU-Game-Jam-Crucifix-2.0
-S:/Program-Work/GitHub/IU-Game-Jam-Crucifix-2.0
+52259
+Successfully changed project path to: D:/GitHub/Neuer Ordner/IU-Game-Jam-Crucifix-2.0
+D:/GitHub/Neuer Ordner/IU-Game-Jam-Crucifix-2.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 64.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
-[Subsystems] Discovering subsystems at path S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path S:/Program-Work/GitHub/IU-Game-Jam-Crucifix-2.0/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/Neuer Ordner/IU-Game-Jam-Crucifix-2.0/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   
-    VRAM:     4053 MB
-    Driver:   27.21.14.6647
+    VRAM:     8079 MB
+    Driver:   30.0.14.7168
 Initialize mono
-Mono path[0] = 'S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/Managed'
-Mono path[1] = 'S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: S:/Programme/Unity Versions/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001475 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005130 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 36.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
+- Completed reload, in  1.813 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1142ms)
-		BeginReloadAssembly (62ms)
+	ReloadAssembly (1814ms)
+		BeginReloadAssembly (86ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (379ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (140ms)
+			SetupTypeCache (197ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (150ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (241ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (71ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002718 seconds.
+Registered in 0.003534 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 36.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.006 seconds
+- Completed reload, in  1.552 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1007ms)
-		BeginReloadAssembly (141ms)
+	ReloadAssembly (1552ms)
+		BeginReloadAssembly (204ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (814ms)
-			LoadAssemblies (99ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1253ms)
+			LoadAssemblies (132ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (303ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (489ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.9 MB.
-System memory in use after: 94.0 MB.
+Unloading 2128 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.0 MB.
+System memory in use after: 94.1 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2565.
-Total: 2.952900 ms (FindLiveObjects: 0.202900 ms CreateObjectMapping: 0.082600 ms MarkObjects: 2.601500 ms  DeleteObjects: 0.065000 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2569.
+Total: 4.115900 ms (FindLiveObjects: 0.289900 ms CreateObjectMapping: 0.074600 ms MarkObjects: 3.666200 ms  DeleteObjects: 0.083500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -129,558 +129,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Textures
-  artifactKey: Guid(2f3f120bcb31aad44aa7cf201ea9132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures using Guid(2f3f120bcb31aad44aa7cf201ea9132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e665d92980e34dc68e50849bcf8a9554') in 0.008752 seconds 
-  Import took 0.012079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 64.345300 seconds.
-  path: Assets/_WorkSpaces
-  artifactKey: Guid(6f6d4035c0548ca4c9a2d4da83db11d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces using Guid(6f6d4035c0548ca4c9a2d4da83db11d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea220dbc2da4ccb8a55837da2be6d950') in 0.008721 seconds 
-  Import took 0.012452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.580198 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie
-  artifactKey: Guid(ae14f4718d862044cb8c077f3c567d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie using Guid(ae14f4718d862044cb8c077f3c567d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90e7abe8ca42a8af1718ff6102ef48d') in 0.006991 seconds 
-  Import took 0.011022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 154.083400 seconds.
-  path: Assets/_WorkSpaces/New Folder
-  artifactKey: Guid(c88c18f9d44e98b4da726b12c25540e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/New Folder using Guid(c88c18f9d44e98b4da726b12c25540e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39badf91ea9abdfa46697d44caa11fa2') in 0.008817 seconds 
-  Import took 0.013704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.818842 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV
-  artifactKey: Guid(f3535bff93717f348acc41a1d98e1b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV using Guid(f3535bff93717f348acc41a1d98e1b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ff2eb278688047381ea7c2e47019be') in 0.007215 seconds 
-  Import took 0.011537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.985950 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs
-  artifactKey: Guid(2c8853d2e2bfd4f46840c69af86744e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs using Guid(2c8853d2e2bfd4f46840c69af86744e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53eb77fe0ec6777a3fb52b232f64648f') in 0.008835 seconds 
-  Import took 0.012996 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.075420 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Clock.prefab
-  artifactKey: Guid(b273bb52b5f17504b8df90e6f776dc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Clock.prefab using Guid(b273bb52b5f17504b8df90e6f776dc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a3da095baf78e40f8df50a9e52b150') in 0.142318 seconds 
-  Import took 0.146903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 1.prefab
-  artifactKey: Guid(5f91e6402b20408458f41348f52d8053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 1.prefab using Guid(5f91e6402b20408458f41348f52d8053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c46e88857e4aa47edceb4284b16598') in 0.015036 seconds 
-  Import took 0.019631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 2.prefab
-  artifactKey: Guid(0229343d59f61b744a32f0af406ddc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 2.prefab using Guid(0229343d59f61b744a32f0af406ddc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38168400eab8b7d4d249017c2a95c11e') in 0.012837 seconds 
-  Import took 0.017294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 1.prefab
-  artifactKey: Guid(5f91e6402b20408458f41348f52d8053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Test Objekt 1.prefab using Guid(5f91e6402b20408458f41348f52d8053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c46e88857e4aa47edceb4284b16598') in 0.007610 seconds 
-  Import took 0.012223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.965512 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items
-  artifactKey: Guid(e3e264d285d2d6442b6d91b7fbad818b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items using Guid(e3e264d285d2d6442b6d91b7fbad818b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7782c75f1c02bff34623eabb224dcc63') in 0.007279 seconds 
-  Import took 0.011377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.062373 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Baldrian.prefab
-  artifactKey: Guid(e152a56405064ba47a9aef748614bb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Baldrian.prefab using Guid(e152a56405064ba47a9aef748614bb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ff57bb0be8534d611ba2a065d32010') in 0.011797 seconds 
-  Import took 0.015741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Stinkesocke.prefab
-  artifactKey: Guid(48da879fd8d38d04d934649a2ef2ca1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Stinkesocke.prefab using Guid(48da879fd8d38d04d934649a2ef2ca1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43992290d29700e16b67a4a112de15b') in 0.010855 seconds 
-  Import took 0.014946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/BaldrianItem 1.prefab
-  artifactKey: Guid(d1a414f15f1ba1f469f46d4ecb243c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/BaldrianItem 1.prefab using Guid(d1a414f15f1ba1f469f46d4ecb243c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323a62d20ce65757e68bc2cac3eccf9a') in 0.011077 seconds 
-  Import took 0.015401 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/BaldrianItem.prefab
-  artifactKey: Guid(bd5487d0777092d4bbd89bc1fd12f423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/BaldrianItem.prefab using Guid(bd5487d0777092d4bbd89bc1fd12f423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab73e83b3e97c5cb2c6c1f241403218') in 0.012386 seconds 
-  Import took 0.017024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/KaugummiItem.prefab
-  artifactKey: Guid(7400900e56367ff4fb56a68deca78c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/KaugummiItem.prefab using Guid(7400900e56367ff4fb56a68deca78c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32fbcec8b58d4978c0e9b3f396c42550') in 0.012529 seconds 
-  Import took 0.016889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Ehering.prefab
-  artifactKey: Guid(8c274511101abb241a7b15e706199c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Ehering.prefab using Guid(8c274511101abb241a7b15e706199c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee225a3422a7b6852b612a140f3571c') in 0.011720 seconds 
-  Import took 0.016270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003382 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Kaugummi.prefab
-  artifactKey: Guid(7e2129a39d1eb1b409884599dd897178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Kaugummi.prefab using Guid(7e2129a39d1eb1b409884599dd897178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69e65e0fd75a3343d2488fb11517d39') in 0.012257 seconds 
-  Import took 0.015919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/StinkesockeItem.prefab
-  artifactKey: Guid(828a0c0131d96d44a94fbda6b54f6f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/StinkesockeItem.prefab using Guid(828a0c0131d96d44a94fbda6b54f6f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2c66e776cde92f0b7c2048d421215c') in 0.011620 seconds 
-  Import took 0.015511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Kaugummi.prefab
-  artifactKey: Guid(7e2129a39d1eb1b409884599dd897178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Kessel Items/Kaugummi.prefab using Guid(7e2129a39d1eb1b409884599dd897178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69e65e0fd75a3343d2488fb11517d39') in 0.008280 seconds 
-  Import took 0.012048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.969650 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation
-  artifactKey: Guid(372bbb850cebe994baf8afdc9160c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation using Guid(372bbb850cebe994baf8afdc9160c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ece39f5a42f905ad84f430b5fc2315') in 0.007189 seconds 
-  Import took 0.011339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.037765 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Canvas.prefab
-  artifactKey: Guid(92d99ac699ca6384aaefecd20e7b2818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Canvas.prefab using Guid(92d99ac699ca6384aaefecd20e7b2818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e9d48e7ebfd483183ced681bd1a216') in 0.008859 seconds 
-  Import took 0.012611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Eingangshalle.prefab
-  artifactKey: Guid(cb1d3d7f55278074ba7f4df17793cfd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Eingangshalle.prefab using Guid(cb1d3d7f55278074ba7f4df17793cfd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91447e4d5a40ab0676ec9bb3ef500a4') in 0.008960 seconds 
-  Import took 0.012754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Arbeitszimmer.prefab
-  artifactKey: Guid(dea29cf48cc10ad4988c14fddedb9d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Arbeitszimmer.prefab using Guid(dea29cf48cc10ad4988c14fddedb9d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733cd984aa7177a7f9cf04ce1c063998') in 0.009179 seconds 
-  Import took 0.013685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door.prefab
-  artifactKey: Guid(1a1bcb9de349cfd4f924bba048a048bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door.prefab using Guid(1a1bcb9de349cfd4f924bba048a048bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee43e3d658d98067d56a8447f8a4467') in 0.010006 seconds 
-  Import took 0.013498 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Turn Right.prefab
-  artifactKey: Guid(6fc670ef6bc3a1c47aaa95d4592edbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Turn Right.prefab using Guid(6fc670ef6bc3a1c47aaa95d4592edbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad89acafe451c5a9c6075a7f7a71632d') in 0.008271 seconds 
-  Import took 0.012357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/TurnLeft.prefab
-  artifactKey: Guid(bb9e46c4a47305145935702bac3c936a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/TurnLeft.prefab using Guid(bb9e46c4a47305145935702bac3c936a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc6515d99e870bc89742bb9d1cf2143') in 0.008533 seconds 
-  Import took 0.012632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Wohnzimmer.prefab
-  artifactKey: Guid(9225c03d9cd4c7d4a99fe64eaafe894c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Navigation/Door Wohnzimmer.prefab using Guid(9225c03d9cd4c7d4a99fe64eaafe894c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eac2137405fa8aad7fd16c8ecb61a3f') in 0.009155 seconds 
-  Import took 0.012908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.576307 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard
-  artifactKey: Guid(2feb7f038a6dbcf45beeb70d15341288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard using Guid(2feb7f038a6dbcf45beeb70d15341288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86619828aa1c547faf8584f697aba027') in 0.013520 seconds 
-  Import took 0.018441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041266 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/AdventureManager.prefab
-  artifactKey: Guid(28ad55ccab04d744ca9fab237dd609b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/AdventureManager.prefab using Guid(28ad55ccab04d744ca9fab237dd609b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd94857b651bbb2cfefba56af018404') in 0.008196 seconds 
-  Import took 0.012000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/EventSystem.prefab
-  artifactKey: Guid(c5bcad7ad5e9d474cbce56bf91d0f42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/EventSystem.prefab using Guid(c5bcad7ad5e9d474cbce56bf91d0f42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f986557d8b77347c401721c491072a') in 0.009631 seconds 
-  Import took 0.013432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/Inventory.prefab
-  artifactKey: Guid(7c75ab8d9e272b041a1b463d29d31443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_DV/Prefabs/Standard/Inventory.prefab using Guid(7c75ab8d9e272b041a1b463d29d31443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c273964bd307e38864235bfb2e9bf4') in 0.009789 seconds 
-  Import took 0.013608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.490486 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Asset
-  artifactKey: Guid(c2f0b18bf3ecdb347bf0773ffbc099f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Asset using Guid(c2f0b18bf3ecdb347bf0773ffbc099f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccd86a955527113843957910aa29c13') in 0.007029 seconds 
-  Import took 0.010772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.085302 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Test Objekt.png
-  artifactKey: Guid(fb2a34f42ab6e2c408b2b17e047eea0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Test Objekt.png using Guid(fb2a34f42ab6e2c408b2b17e047eea0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af1e46682a664de241867a82ff27bb4') in 0.030880 seconds 
-  Import took 0.034550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Wand Vorlage.png
-  artifactKey: Guid(bf2e2f59957b78a4088f4eb583e85c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Wand Vorlage.png using Guid(bf2e2f59957b78a4088f4eb583e85c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd813da0ee544d41a429a00c1ba2437ae') in 0.017788 seconds 
-  Import took 0.020845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002956 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Wand Vorlage.png
-  artifactKey: Guid(bf2e2f59957b78a4088f4eb583e85c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Asset/Wand Vorlage.png using Guid(bf2e2f59957b78a4088f4eb583e85c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd813da0ee544d41a429a00c1ba2437ae') in 0.009737 seconds 
-  Import took 0.015334 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.864371 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes
-  artifactKey: Guid(040e473567ce1694499c74822fdf2f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Scenes using Guid(040e473567ce1694499c74822fdf2f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f81b5d84b30af2dd3154514619bd39') in 0.007118 seconds 
-  Import took 0.011935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.962942 seconds.
-  path: Assets/_WorkSpaces/WorkSpace_Olsie/Script
-  artifactKey: Guid(ed37934b8fb4bc946964260b1ad1b04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/WorkSpace_Olsie/Script using Guid(ed37934b8fb4bc946964260b1ad1b04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2cec2fa929618cfc719899cb4ffcb8') in 0.008615 seconds 
-  Import took 0.014067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.761189 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel
-  artifactKey: Guid(c88c18f9d44e98b4da726b12c25540e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel using Guid(c88c18f9d44e98b4da726b12c25540e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab702cda2629c8bed6dc40f921ed151') in 0.007284 seconds 
-  Import took 0.011208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.189391 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets
-  artifactKey: Guid(700c3869975b44b4a9ef9f531dd2799e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets using Guid(700c3869975b44b4a9ef9f531dd2799e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89c41b2315e31ac5c6b2f40d9edb69c') in 0.007603 seconds 
-  Import took 0.011763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.671357 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png
-  artifactKey: Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png using Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4df33bb71bf823ad6181d48f9dbd95') in 0.021522 seconds 
-  Import took 0.025302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Menu.png
-  artifactKey: Guid(91ed10db2b42d594ca9b9161a4f732b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Menu.png using Guid(91ed10db2b42d594ca9b9161a4f732b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7406769bb4c4ded7e0587c54aae70cca') in 0.012692 seconds 
-  Import took 0.015633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.283049 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer Wand 1 Anordnung (1).png
-  artifactKey: Guid(e81575392297e894c8681c2c59b6baa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer Wand 1 Anordnung (1).png using Guid(e81575392297e894c8681c2c59b6baa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c7ecd8faa8d2778e3d8f1d66f77fad') in 0.016922 seconds 
-  Import took 0.021337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001582 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer Wand 1 Anordnung (1).png
-  artifactKey: Guid(e81575392297e894c8681c2c59b6baa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer Wand 1 Anordnung (1).png using Guid(e81575392297e894c8681c2c59b6baa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c7ecd8faa8d2778e3d8f1d66f77fad') in 0.024014 seconds 
-  Import took 0.030421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.082840 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Wohnzimmer
-  artifactKey: Guid(71dc0bd0b5d9b2d4badd6986b6710d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Wohnzimmer using Guid(71dc0bd0b5d9b2d4badd6986b6710d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac5e2dd588189a05d43791d6b3c1bda') in 0.006110 seconds 
-  Import took 0.009789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.467358 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer
-  artifactKey: Guid(7b022269bf813304c9a7ad5fce463da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Arbeitszimmer using Guid(7b022269bf813304c9a7ad5fce463da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8990ef176525eb54c239838cfaa5fba3') in 0.006519 seconds 
-  Import took 0.010455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.400260 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png
-  artifactKey: Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png using Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb0dcae169ca6b57d6e380ed2dac21e') in 0.023896 seconds 
-  Import took 0.029887 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png
-  artifactKey: Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png using Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2771d73d58da6b932479544462685abf') in 0.024350 seconds 
-  Import took 0.031369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png
-  artifactKey: Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png using Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010afa14362b47a6dac1171d28925add') in 0.019440 seconds 
-  Import took 0.024403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png
-  artifactKey: Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png using Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1708da9693d0b700a5c79aa2b378144') in 0.017739 seconds 
-  Import took 0.023203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Wohnzimmer S Voll.png
-  artifactKey: Guid(603450370c9f18849b26ba10a81577d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Wohnzimmer S Voll.png using Guid(603450370c9f18849b26ba10a81577d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f82a0253870aaa5449708c6d146e9f8') in 0.017762 seconds 
-  Import took 0.021915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png
-  artifactKey: Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png using Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c096f5c046a121f7ad7fcc6b1e2d3faf') in 0.015612 seconds 
-  Import took 0.019301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Wand Wohnzimmer S.png
-  artifactKey: Guid(e25adcda332151e4a98bc13a452d0ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Wand Wohnzimmer S.png using Guid(e25adcda332151e4a98bc13a452d0ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14a8fe079aa57d3e5024ae0e92e0f3d') in 0.014989 seconds 
-  Import took 0.018382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002972 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Wand Wohnzimmer S.png
-  artifactKey: Guid(e25adcda332151e4a98bc13a452d0ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Wand Wohnzimmer S.png using Guid(e25adcda332151e4a98bc13a452d0ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14a8fe079aa57d3e5024ae0e92e0f3d') in 0.009883 seconds 
-  Import took 0.014159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.066072 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/UI
-  artifactKey: Guid(96eff0b284c38864cb359151807a639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/UI using Guid(96eff0b284c38864cb359151807a639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b87bf6e0df3c113386a48ef8c45240be') in 0.006632 seconds 
-  Import took 0.010677 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.037322 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png
-  artifactKey: Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png using Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e99dc82ce2f664bc6e738da7862871') in 0.011048 seconds 
-  Import took 0.016087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png
-  artifactKey: Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png using Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a23938b829b8d149997bd7e3650e506') in 0.011845 seconds 
-  Import took 0.016343 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png
-  artifactKey: Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png using Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7768e0410f6e24e6a5bd60520de3d23d') in 0.015223 seconds 
-  Import took 0.019542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png
-  artifactKey: Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png using Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7580d6fd31ca08f7e2afe32ca03284a0') in 0.011220 seconds 
-  Import took 0.015045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png
-  artifactKey: Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png using Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78901a751f47013697b97f69b997a53') in 0.011691 seconds 
-  Import took 0.016072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.190402 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png
-  artifactKey: Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Fehlender Buch Wohnzimmer S.png using Guid(6928d8303e2c9d846b6c7af4f58c61a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4e8eaf4536b0f1b5cdc0c03e710b7b') in 0.016573 seconds 
-  Import took 0.020545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.460936 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png
-  artifactKey: Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Normal Wohnzimmer S.png using Guid(b747b65088639f74fa798a44bc52b7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ce5495f4f0c52733d61ef043a51822') in 0.020762 seconds 
-  Import took 0.025340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.169714 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png
-  artifactKey: Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Bücherregal Repariert Wohnzimmer S.png using Guid(c5e13df0f22465345829594d0e516d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e435bde56ca6addbbd1913d1d262f300') in 0.019324 seconds 
-  Import took 0.025973 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.757671 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png
-  artifactKey: Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Fenster Wohnzimmer S (BRAUCHT GARDINEN).png using Guid(aab8c6322841b894f916ff2398b67122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f925c5d6d3eb9b5e82a0bde50a0a634') in 0.021729 seconds 
-  Import took 0.028679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.247298 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png
-  artifactKey: Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S.png using Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0e3499e6f3b36111779eb3ab945d43') in 0.016916 seconds 
-  Import took 0.024762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.522049 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen W.png
-  artifactKey: Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen W.png using Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba658772b8c745605e597ac54afaf5e7') in 0.016222 seconds 
-  Import took 0.020331 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.478325 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S (Eventuell Animiert).png
-  artifactKey: Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Gardinen Wohnzimmer S (Eventuell Animiert).png using Guid(886a9aba5f74fd0409e9c5818a27d6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b7014fecab808304c349cd412ba1c0') in 0.015841 seconds 
-  Import took 0.019882 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.468179 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png
-  artifactKey: Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png using Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbf0cb039a1bc499d08904a9095962a') in 0.013003 seconds 
-  Import took 0.017688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.485478 seconds.
-  path: Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png
-  artifactKey: Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_WorkSpaces/Workspace_Samuel/Assets/Icons.png using Guid(db6de2aa31b7d2942b4fb5e258d0dc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7a8741e0776b74113e8eab63803370') in 0.034010 seconds 
-  Import took 0.038321 seconds .
+  path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer1.unity
+  artifactKey: Guid(46549d8c8517948409781f02ec5fbb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer1.unity using Guid(46549d8c8517948409781f02ec5fbb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb5066c861eeb09e640ed22d3072522') in 0.019193 seconds 
+  Import took 0.023201 seconds .
 
