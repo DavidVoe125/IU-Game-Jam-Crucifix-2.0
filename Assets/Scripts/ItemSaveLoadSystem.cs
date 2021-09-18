@@ -3,68 +3,86 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Scene = UnityEditor.SearchService.Scene;
 
 public class ItemSaveLoadSystem : MonoBehaviour
 {
     private Transform background;
 
-    private Transform parentObj; 
-    
+    private Transform parentObj;
+
+    public GameObject baldrianItem; //0
+    public GameObject baldrian; //1
+
     public GameObject[] itemPrefabs;
-    
-    private GameObject apple; //0
 
-    private const string appleCKey = "AppleCheck";
-    private const string appleXKey = "AppleXPos";
-    private const string appleYKey = "AppleYPos";
+    public int baldrianC;
+    public float baldrianX;
+    public float baldrianY;
 
-    public int appleC = PlayerPrefs.GetInt(appleCKey);
-    public float appleX = PlayerPrefs.GetInt(appleXKey);
-    public float appleY = PlayerPrefs.GetInt(appleYKey);
+    public float StartX;
+    public float StartY;
+
+    private string sceneName;
 
     // Start is called before the first frame update
     void Start()
     {
+        sceneName = SceneManager.GetActiveScene().name;
+        
+        baldrianC = PlayerPrefs.GetInt("baldrianCheck");
+        baldrianX = PlayerPrefs.GetFloat("baldrianXPos");
+        baldrianY = PlayerPrefs.GetFloat("baldrianYPos");
+
         // Kamera wird automatisch in Scene gefunden under der Variable "background zugeordnet
         background = GameObject.Find("Main Camera").transform;
 
         // Transform Komponente wird als Variable gespeichert
         parentObj = GetComponent<Transform>();
+        
+        baldrianItem = GameObject.Find("BaldrianItem");
 
-        // Wenn "appleC" aussagt, dass "apple" existiert
-        if (appleC == 1)
+        if (sceneName == "Arbeitszimmer1" && baldrianC == 1)
         {
-            // "apple"-Prefab wird an den Koordinaten "appleX" und "appleY" initiert
-            var instance = Instantiate(itemPrefabs[0], 
-                new Vector3(appleX, appleY, 0), 
-                transform.rotation);
-            // "apple"-Objekt wird "Inventory"-Objekt untergeordnet
-            instance.transform.parent = parentObj;
+            Destroy(baldrianItem);
         }
-        // Wenn "appleC" aussagt, dass "apple" nicht existiert
+
+        // Wenn "baldrianC" aussagt, dass "baldrian" existiert
+        if (baldrianC == 1)
+        {
+            // "baldrian"-Prefab wird an den Koordinaten "baldrianX" und "baldrianY" initiert
+            var instance = Instantiate(itemPrefabs[1],
+                new Vector3(baldrianX, baldrianY, 0),
+                transform.rotation);
+            // "baldrian" - Objekt wird "Inventory" - Objekt untergeordnet
+            instance.transform.parent = parentObj;
+            baldrian = instance;
+        }
+        // Wenn "baldrianC" aussagt, dass "baldrian" nicht existiert
         else
         {
-            // Nur zum Test!
-            var instance = Instantiate(itemPrefabs[0], Vector3.zero,
-                transform.rotation);
-            instance.transform.parent = parentObj;
+            print("Baldrian existiert nicht");
         }
     }
 
     void OnDestroy()
     {
-        // Wenn "appleC" aussagt, dass "apple" existiert
-        if (appleC == 1)
+        // Wenn "baldrianC" aussagt, dass "baldrian" existiert
+        if (baldrianC == 1)
         {
-            // Item "Apfel" wird in der Scene gesucht und als "apple"-Variable gespeichert
-            apple = GameObject.Find("Apfel");
-            //Wenn "apple"-Variable nicht leer ist
-            if (apple != null)
+            print("Bal gespeichert");
+
+            // Item "baldrian" wird in der Scene gesucht und als "baldrian"-Variable gespeichert
+            
+            //Wenn "baldrian"-Variable nicht leer ist
+            if (baldrian != null)
             {
-                // X-Position von "apple" wird als PlayerPref gespeichert
-                PlayerPrefs.SetFloat(appleXKey, apple.transform.position.x - background.position.x);
-                // Y-Position von "apple" wird als PlayerPref gespeichert
-                PlayerPrefs.SetFloat(appleYKey, apple.transform.position.y - background.position.y);
+                print(baldrian.transform.position.x - background.position.x);
+                // X-Position von "baldrian" wird als PlayerPref gespeichert
+                PlayerPrefs.SetFloat("baldrianXPos", baldrian.transform.position.x - background.position.x);
+                // Y-Position von "baldrian" wird als PlayerPref gespeichert
+                PlayerPrefs.SetFloat("baldrianYPos", baldrian.transform.position.y - background.position.y);
             }
         }
     }
@@ -72,6 +90,23 @@ public class ItemSaveLoadSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        baldrianC = PlayerPrefs.GetInt("baldrianCheck");
+        baldrianX = PlayerPrefs.GetFloat("baldrianXPos");
+        baldrianY = PlayerPrefs.GetFloat("baldrianYPos");
+
+        if (baldrianC == 2)
+        {
+            // "baldrian"-Prefab wird an den Start-Koordinaten initiert
+            var instance = Instantiate(itemPrefabs[1],
+                new Vector3(StartX, StartY, 0),
+                transform.rotation);
+
+            // "baldrian" - Objekt wird "Inventory" - Objekt untergeordnet
+            instance.transform.parent = parentObj;
+            baldrian = instance;
+
+            PlayerPrefs.SetInt("baldrianCheck", 1);
+        }
     }
 }
+
