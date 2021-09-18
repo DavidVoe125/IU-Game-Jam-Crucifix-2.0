@@ -48,6 +48,8 @@ public class DoorLevelTrigger : MonoBehaviour
                 print("loadnextlvl");
 
                 SceneManager.LoadScene(nextLevel);
+
+                print(nextLevel);
                 }
             
             else
