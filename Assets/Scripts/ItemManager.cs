@@ -10,25 +10,20 @@ public class ItemManager : MonoBehaviour
     private float startPosY;
     private bool isBeingHeld = false;
     private Vector2 mousePos;
-    private Transform background;
-    private float backgroundStart;
-    private float backgroundUpdate;
-    public float minY = -10;
-    public float maxY = 10;
+    public float minY = -3.16f;
+    public float minX = -5;
+    private float maxX;
     public int itemCounter = 2;
     private SpriteRenderer itemRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        maxX = -minX;
         // Item-Rigitbody als Variable definieren
         itemRb = GetComponent<Rigidbody2D>();
         // itemGrav als Gravitation des Rigitbody definieren
         itemRb.gravityScale = itemGrav;
-        // "Main Camera" finden und zuordnen
-        background = GameObject.Find("Main Camera").transform;
-        // Startpunkt der Cam beim Laden der Scene speichern
-        backgroundStart = background.position.x;
         // Item-SpriteRenderer als Variable definieren
         itemRenderer = GetComponent<SpriteRenderer>();
     }
@@ -43,41 +38,35 @@ public class ItemManager : MonoBehaviour
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            // Item-Position wird zu relativer MMaus-Position geupdatet
-            this.gameObject.transform.localPosition = 
+            // Item-Position wird zu relativer Maus-Position geupdatet
+                this.gameObject.transform.localPosition = 
                 new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
 
             // Velocity wird auf 0 gehalten, bis Item losgelassen wird
             itemRb.velocity = Vector2.zero;
         }
 
-        // Wenn die Kamera ihre Position in der x-Achse verändert
-        if (backgroundStart != background.position.x)
-        {
-            // Veränderung der x-Achse der Kamera als Variable
-            backgroundUpdate = backgroundStart - background.position.x;
-            // Anpassung der Item-Position um die Veränderung der Kamera in x-Richtung
-            transform.position = new Vector2(transform.position.x 
-                                             - backgroundUpdate, transform.position.y);
-            // backgroundStart wird mit der aktuellen Position der Kamera geupdated
-            backgroundStart = background.position.x;
-        }
-
         // Wenn Item under/gleich Wert A in Y-Richtung
         if (transform.position.y <= minY)
         {
-            // Item-Position wird auf Wert A begrenzt und Velocity gleich 0 gesetzt
+            // Item-Position wird auf Wert A begrenzt und Velocity und Gravity Scale gleich 0 gesetzt
             transform.position = new Vector2(transform.position.x, minY);
             itemRb.velocity = Vector2.zero;
-
+            itemRb.gravityScale = 0;
+        }
+       
+        // Wenn Item under/gleich Wert B in X-Richtung
+        if (transform.position.x <= minX)
+        {
+            // Item-Position wird auf Wert B begrenzt
+            transform.position = new Vector2(minX, transform.position.y);
         }
 
-        // Wenn Item über/gleich Wert B in Y-Richtung
-        if (transform.position.y >= maxY)
+        // Wenn Item under/gleich Wert B in X-Richtung
+        if (transform.position.x >= maxX)
         {
-            // Item-Position wird auf Wert B begrenzt und Velocity gleich 0 gesetzt
-            transform.position = new Vector2(transform.position.x, maxY);
-            itemRb.velocity = Vector2.zero;
+            // Item-Position wird auf Wert B begrenzt
+            transform.position = new Vector2(maxX, transform.position.y);
         }
     }
 
@@ -99,13 +88,13 @@ public class ItemManager : MonoBehaviour
 
             //TODO: Renderer Sortierung fertig machen
 
-            SpriteRenderer[] renderers = FindObjectsOfType<SpriteRenderer>();
-            foreach (SpriteRenderer renderer in renderers)
-            {
-                renderer.sortingOrder = renderer.sortingOrder - 1;
-            }
+            //SpriteRenderer[] renderers = FindObjectsOfType<SpriteRenderer>();
+            //foreach (SpriteRenderer renderer in renderers)
+            //{
+            //    renderer.sortingOrder = renderer.sortingOrder - 1;
+            //}
 
-            itemRenderer.sortingOrder = 100 + itemCounter;
+            itemRenderer.sortingOrder = 10;
         }
     }
 
@@ -115,6 +104,9 @@ public class ItemManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         { 
             isBeingHeld = false;
+            
+            // Gravity Scale wird zurückgesetzt
+            itemRb.gravityScale = itemGrav;
         }
     }
 }
