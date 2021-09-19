@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> sentences;
+    public Text nameText;
+    public Text dialogueText;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +19,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue conversation)
     {
-        Debug.Log("Conversations start mit" + conversation.name);
+        animator.SetBool("IsOpen", true);
+        nameText.text = conversation.name;
 
         //cleared den letzten dialog aus der Queue (falls vorhanden)
         sentences.Clear();
@@ -43,11 +48,12 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
 
         //displayed den eben entnommenen sentence
-        Debug.Log(sentence);
+        dialogueText.text = sentence;
     }
 
     void EndDialogue()
     {
+        animator.SetBool("IsOpen", false);
         Debug.Log("Conversation Endet");
     }
 }
