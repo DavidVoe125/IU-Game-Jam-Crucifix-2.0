@@ -8,13 +8,19 @@ public class DoorLevelTrigger : MonoBehaviour
     private Vector3 mousePosition;
     public Vector3 mousePositionWorld;
     public Vector2 mousePositionWorld2D;
+    public GameObject CameraObj;
     public Camera mainCamera;
     public string nextLevel;
     RaycastHit2D hit;
+    private string sceneName;
+
+    private string lastSceneName;
     // Start is called before the first frame update
     void Start()
     {
-        
+        CameraObj = GameObject.Find("Main Camera");
+        mainCamera = CameraObj.GetComponent<Camera>();
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -42,15 +48,20 @@ public class DoorLevelTrigger : MonoBehaviour
             hit = Physics2D.Raycast(mousePositionWorld2D, Vector2.zero);
 
             //Hat hit einen Collider?
-            if (hit.collider.gameObject.tag == "Door")
-                {
+            if (hit.collider.gameObject.tag == "Door" && sceneName == "Settings")
+            {
+                lastSceneName = PlayerPrefs.GetString("lastSceneName", "MainMenu");
+                SceneManager.LoadScene(lastSceneName);
+            }
+            else if (hit.collider.gameObject.tag == "Door" && sceneName != "Settings")
+            { 
                 //=ist Tür
-                print("loadnextlvl");
-
+                //print("loadnextlvl");
+                    
                 SceneManager.LoadScene(nextLevel);
-
+                    
                 print(nextLevel);
-                }
+            }
             
             else
             {
