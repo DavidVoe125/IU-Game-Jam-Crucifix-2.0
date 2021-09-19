@@ -7,6 +7,7 @@ TagManager:
   - Door
   - Inventory
   - Item
+  - Ghostkid
   layers:
   - Default
   - TransparentFX
