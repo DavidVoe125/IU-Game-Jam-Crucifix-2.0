@@ -46,9 +46,21 @@ public class DialogueManager : MonoBehaviour
         }
         //nimmt den nun gezeigten satz aus der Queue
         string sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
 
         //displayed den eben entnommenen sentence
         dialogueText.text = sentence;
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     void EndDialogue()
