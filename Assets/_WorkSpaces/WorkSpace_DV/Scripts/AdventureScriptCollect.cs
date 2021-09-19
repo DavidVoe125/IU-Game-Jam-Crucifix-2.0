@@ -12,7 +12,9 @@ public class AdventureScriptCollect : MonoBehaviour
     public Camera mainCamera;
     private RaycastHit2D hit;
     private GameObject baldrianItem;
-
+    private GameObject stinkesockeItem;
+    private GameObject kaugummiItem;
+    private GameObject eheringItem;
 
     void Start()
     {
@@ -55,9 +57,6 @@ public class AdventureScriptCollect : MonoBehaviour
 
                 if (hit.collider.gameObject.name == "BaldrianItem")
                 {
-                    
-                    // hit.collider.gameObject.SetActive(false);
-
                     PlayerPrefs.SetInt("baldrianCheck", 2);
                     print("Playerpref wurde erstellt");
                     print(PlayerPrefs.GetInt("baldrianCheck"));
@@ -65,7 +64,27 @@ public class AdventureScriptCollect : MonoBehaviour
                     baldrianItem = hit.collider.gameObject;
                     Destroy(baldrianItem);
                 }
+                else if (hit.collider.gameObject.name == "StinkesockeItem")
+                {
+                    PlayerPrefs.SetInt("stinkesockeCheck", 2);
 
+                    stinkesockeItem = hit.collider.gameObject;
+                    Destroy(stinkesockeItem);
+                }
+                else if (hit.collider.gameObject.name == "KaugummiItem")
+                {
+                    PlayerPrefs.SetInt("kaugummiCheck", 2);
+
+                    kaugummiItem = hit.collider.gameObject;
+                    Destroy(kaugummiItem);
+                }
+                else if (hit.collider.gameObject.name == "EheringItem")
+                {
+                    PlayerPrefs.SetInt("eheringCheck", 2);
+
+                    eheringItem = hit.collider.gameObject;
+                    Destroy(eheringItem);
+                }
             }
             else
             {
