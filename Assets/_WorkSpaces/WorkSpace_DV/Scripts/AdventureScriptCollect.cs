@@ -15,6 +15,8 @@ public class AdventureScriptCollect : MonoBehaviour
     private GameObject stinkesockeItem;
     private GameObject kaugummiItem;
     private GameObject eheringItem;
+    private GameObject buchItem;
+    private GameObject schlüsselItem;
 
     void Start()
     {
@@ -85,6 +87,30 @@ public class AdventureScriptCollect : MonoBehaviour
                     eheringItem = hit.collider.gameObject;
                     Destroy(eheringItem);
                 }
+                else if (hit.collider.gameObject.name == "BuchItem")
+                {
+                    PlayerPrefs.SetInt("regalRepair", 4);
+                    PlayerPrefs.SetInt("schlüsselFreigabe", 1);
+
+                    buchItem = hit.collider.gameObject;
+                    Destroy(buchItem);
+                }
+                else if (hit.collider.gameObject.name == "SchlüsselItem(Clone)")
+                {
+                    PlayerPrefs.SetInt("schlüsselCheck", 2);
+                    PlayerPrefs.SetInt("schlüsselFreigabe", 2);
+
+                    schlüsselItem = hit.collider.gameObject;
+                    Destroy(schlüsselItem);
+                }
+                else if (hit.collider.gameObject.name == "SchraubeItem")
+                {
+                    PlayerPrefs.SetInt("schraubeCheck", 2);
+                    
+                    schlüsselItem = hit.collider.gameObject;
+                    Destroy(schlüsselItem);
+                }
+
             }
             else
             {

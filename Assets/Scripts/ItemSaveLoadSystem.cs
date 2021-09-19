@@ -12,6 +12,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
 
     private Transform parentObj;
 
+    public int buchN = 0;
     public GameObject baldrianItem;
     public GameObject baldrian; //1
     public int baldrianN = 1;
@@ -26,6 +27,13 @@ public class ItemSaveLoadSystem : MonoBehaviour
     public int eheringN = 4;
     public GameObject bild; //5
     public int bildN = 5;
+    public GameObject schlüssel; //7
+    public int schlüsselItemN = 6;
+    public int schlüsselN = 7;
+    public GameObject schraubeItem;
+    public GameObject schraube; //8
+    public int schraubeN = 8;
+
 
     public GameObject[] itemPrefabs;
 
@@ -48,6 +56,14 @@ public class ItemSaveLoadSystem : MonoBehaviour
     public int bildC;
     public float bildX;
     public float bildY;
+
+    public int schlüsselC;
+    public float schlüsselX;
+    public float schlüsselY;
+
+    public int schraubeC;
+    public float schraubeX;
+    public float schraubeY;
 
     private string sceneName;
 
@@ -76,6 +92,14 @@ public class ItemSaveLoadSystem : MonoBehaviour
         bildX = PlayerPrefs.GetFloat("bildXPos");
         bildY = PlayerPrefs.GetFloat("bildYPos");
 
+        schlüsselC = PlayerPrefs.GetInt("schlüsselCheck");
+        schlüsselX = PlayerPrefs.GetFloat("schlüsselXPos");
+        schlüsselY = PlayerPrefs.GetFloat("schlüsselYPos");
+
+        schraubeC = PlayerPrefs.GetInt("schraubeCheck");
+        schraubeX = PlayerPrefs.GetFloat("schraubeXPos");
+        schraubeY = PlayerPrefs.GetFloat("schraubeYPos");
+        
         // Kamera wird automatisch in Scene gefunden under der Variable "background zugeordnet
         background = GameObject.Find("Main Camera").transform;
 
@@ -104,6 +128,26 @@ public class ItemSaveLoadSystem : MonoBehaviour
         {
             eheringItem = GameObject.Find("EheringItem");
             Destroy(eheringItem);
+        }
+
+        if (sceneName == "Wohnzimmer2" && schraubeC == 1)
+        {
+            eheringItem = GameObject.Find("SchraubeItem");
+            Destroy(eheringItem);
+        }
+
+        if (PlayerPrefs.GetInt("regalRepair") == 3 && sceneName == "Wohnzimmer3")
+        {
+            var instance = Instantiate(itemPrefabs[buchN],
+                new Vector3(0, 0, 0),
+                transform.rotation);
+        }
+
+        if(PlayerPrefs.GetInt("schlüsselFreigabe") == 1)
+        {
+            var instance = Instantiate(itemPrefabs[schlüsselItemN],
+                new Vector3(6.48f, -3.15f, 0),
+                transform.rotation);
         }
 
         // Wenn "baldrianC" aussagt, dass "baldrian" existiert
@@ -149,6 +193,24 @@ public class ItemSaveLoadSystem : MonoBehaviour
                 transform.rotation);
             instance.transform.parent = parentObj;
             ehering = instance;
+        }
+
+        if (schraubeC == 1)
+        {
+            var instance = Instantiate(itemPrefabs[schraubeN],
+                new Vector3(schraubeX, schraubeY, 0),
+                transform.rotation);
+            instance.transform.parent = parentObj;
+            schraube = instance;
+        }
+
+        if (schlüsselC == 1)
+        {
+            var instance = Instantiate(itemPrefabs[schlüsselN],
+                new Vector3(schlüsselX, schlüsselY, 0),
+                transform.rotation);
+            instance.transform.parent = parentObj;
+            schlüssel = instance;
         }
 
         if (bildC == 1)
@@ -206,6 +268,24 @@ public class ItemSaveLoadSystem : MonoBehaviour
             }
         }
 
+        if (schraubeC == 1)
+        {
+            if (schraube != null)
+            {
+                PlayerPrefs.SetFloat("schraubeXPos", schraube.transform.position.x - background.position.x);
+                PlayerPrefs.SetFloat("schraubeYPos", schraube.transform.position.y - background.position.y);
+            }
+        }
+
+        if (schlüsselC == 1)
+        {
+            if (schlüssel != null)
+            {
+                PlayerPrefs.SetFloat("schlüsselXPos", schlüssel.transform.position.x - background.position.x);
+                PlayerPrefs.SetFloat("schlüsselYPos", schlüssel.transform.position.y - background.position.y);
+            }
+        }
+
         if (bildC == 1)
         {
             if (bild != null)
@@ -242,6 +322,14 @@ public class ItemSaveLoadSystem : MonoBehaviour
         bildC = PlayerPrefs.GetInt("bildCheck");
         bildX = PlayerPrefs.GetFloat("bildXPos");
         bildY = PlayerPrefs.GetFloat("bildYPos");
+
+        schlüsselC = PlayerPrefs.GetInt("schlüsselCheck");
+        schlüsselX = PlayerPrefs.GetFloat("schlüsselXPos");
+        schlüsselY = PlayerPrefs.GetFloat("schlüsselYPos");
+
+        schraubeC = PlayerPrefs.GetInt("schraubeCheck");
+        schraubeX = PlayerPrefs.GetFloat("schraubeXPos");
+        schraubeY = PlayerPrefs.GetFloat("schraubeYPos");
 
         if (baldrianC == 2)
         {
@@ -289,11 +377,33 @@ public class ItemSaveLoadSystem : MonoBehaviour
 
             PlayerPrefs.SetInt("eheringCheck", 1);
         }
+        else if (schlüsselC == 2)
+        {
+            var instance = Instantiate(itemPrefabs[schlüsselN],
+                new Vector3(4.34f, 0.95f, 0),
+                transform.rotation);
+
+            instance.transform.parent = parentObj;
+            ehering = instance;
+
+            PlayerPrefs.SetInt("schlüsselCheck", 1);
+        }
+        else if (schraubeC == 2)
+        {
+            var instance = Instantiate(itemPrefabs[schraubeN],
+                new Vector3(3.1f, -4.8f, 0),
+                transform.rotation);
+
+            instance.transform.parent = parentObj;
+            schraube = instance;
+
+            PlayerPrefs.SetInt("schraubeCheck", 1);
+        }
 
         if (PlayerPrefs.GetInt("KellerItems") == 4)
         {
             // "Bild"-Prefab wird an den Start-Koordinaten initiert
-            var instance = Instantiate(itemPrefabs[5],
+            var instance = Instantiate(itemPrefabs[bildN],
                 new Vector3(0, 0, 0),
                 transform.rotation);
 
@@ -303,6 +413,15 @@ public class ItemSaveLoadSystem : MonoBehaviour
 
             PlayerPrefs.SetInt("bildCheck", 1);
             PlayerPrefs.SetInt("KellerItems", 5);
+        }
+
+        if (PlayerPrefs.GetInt("regalRepair") == 2)
+        {
+            var instance = Instantiate(itemPrefabs[buchN],
+                new Vector3(0, 0, 0),
+                transform.rotation);
+
+            PlayerPrefs.SetInt("regalRepair", 3);
         }
     }
 }

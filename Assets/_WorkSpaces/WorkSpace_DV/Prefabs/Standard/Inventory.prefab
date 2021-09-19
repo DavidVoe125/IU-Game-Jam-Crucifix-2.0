@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65284ec0182a0146bf3f699af0ea32e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buchN: 0
   baldrianItem: {fileID: 0}
   baldrian: {fileID: 0}
   baldrianN: 1
@@ -57,12 +58,22 @@ MonoBehaviour:
   eheringN: 4
   bild: {fileID: 0}
   bildN: 5
+  "schl\xFCssel": {fileID: 0}
+  "schl\xFCsselItemN": 6
+  "schl\xFCsselN": 7
+  schraubeItem: {fileID: 0}
+  schraube: {fileID: 0}
+  schraubeN: 8
   itemPrefabs:
   - {fileID: 0}
   - {fileID: 168715138198586792, guid: e152a56405064ba47a9aef748614bb67, type: 3}
   - {fileID: 8994784736575025901, guid: 48da879fd8d38d04d934649a2ef2ca1a, type: 3}
   - {fileID: 1344994699319791477, guid: 7e2129a39d1eb1b409884599dd897178, type: 3}
   - {fileID: 8676624050481608958, guid: 8c274511101abb241a7b15e706199c67, type: 3}
+  - {fileID: 8676624050481608958, guid: 8c274511101abb241a7b15e706199c67, type: 3}
+  - {fileID: 8090894387427443234, guid: 2311fe0e7f965bf48affaeca9dd396f9, type: 3}
+  - {fileID: 5111953072142100883, guid: bd14cf29487e3e849806240f07bd5612, type: 3}
+  - {fileID: 304625489275744663, guid: 5fb8ba97da5757e4ba0438180da5823d, type: 3}
   baldrianC: 0
   baldrianX: 0
   baldrianY: 0
@@ -78,3 +89,9 @@ MonoBehaviour:
   bildC: 0
   bildX: 0
   bildY: 0
+  "schl\xFCsselC": 0
+  "schl\xFCsselX": 0
+  "schl\xFCsselY": 0
+  schraubeC: 0
+  schraubeX: 0
+  schraubeY: 0

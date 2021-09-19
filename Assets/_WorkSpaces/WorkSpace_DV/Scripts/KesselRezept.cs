@@ -44,7 +44,7 @@ public class KesselRezept : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.name == "Baldrian" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
+        if (col.name == "Baldrian(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
             PlayerPrefs.GetInt("KesselItems") == 0)
         {
             print("+ Baldrian");
@@ -52,8 +52,11 @@ public class KesselRezept : MonoBehaviour
             spriteRenderer.sprite = sprites[1];
 
             PlayerPrefs.SetInt("KesselItems", 1);
+
+            Destroy(col.gameObject);
+            PlayerPrefs.SetInt("baldrianCheck", 3);
         }
-        else if (col.name == "Stinkesocke" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
+        else if (col.name == "Stinkesocke(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 1)
         {
             print("+ Stinkesocke");
@@ -61,8 +64,11 @@ public class KesselRezept : MonoBehaviour
             spriteRenderer.sprite = sprites[2];
 
             PlayerPrefs.SetInt("KesselItems", 2);
+
+            Destroy(col.gameObject);
+            PlayerPrefs.SetInt("stinkesockeCheck", 3);
         }
-        else if (col.name == "Kaugummi" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
+        else if (col.name == "Kaugummi(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 2)
         {
             print("+ Kaugummi");
@@ -70,8 +76,10 @@ public class KesselRezept : MonoBehaviour
             spriteRenderer.sprite = sprites[3];
 
             PlayerPrefs.SetInt("KesselItems", 3);
+            Destroy(col.gameObject);
+            PlayerPrefs.SetInt("kaugummiCheck", 3);
         }
-        else if (col.name == "Ehering" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
+        else if (col.name == "Ehering(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 3)
         {
             print("+ Ehering");
@@ -79,6 +87,8 @@ public class KesselRezept : MonoBehaviour
             spriteRenderer.sprite = sprites[4];
 
             PlayerPrefs.SetInt("KesselItems", 4);
+            Destroy(col.gameObject);
+            PlayerPrefs.SetInt("eheringCheck", 3);
         }
         else if (PlayerPrefs.GetInt("KesselItems") == 5)
         {
