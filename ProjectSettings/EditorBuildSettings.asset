@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/RoomWallRight.unity
     guid: dc37a468f9805e147b913ebd69cd3e78
   - enabled: 1
-    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer1.unity
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer4.unity
     guid: 46549d8c8517948409781f02ec5fbb63
   - enabled: 1
-    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer2.unity
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer1.unity
     guid: a0e28ae5afc1755429fa421abad297e5
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer3.unity
     guid: 8840450aeebf2ac4bb51bf1ce55228e8
   - enabled: 1
-    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer4.unity
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Arbeitszimmer2.unity
     guid: c1c87618e5dc04c409ca6e3d75c9150f
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Eingangshalle1.unity

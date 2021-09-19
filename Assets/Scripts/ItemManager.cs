@@ -10,8 +10,8 @@ public class ItemManager : MonoBehaviour
     private float startPosY;
     private bool isBeingHeld = false;
     private Vector2 mousePos;
-    public float minY = -3.16f;
-    public float minX = -5;
+    private float minY = -4.8f;
+    private float minX = -9f;
     private float maxX;
     public int itemCounter = 2;
     private SpriteRenderer itemRenderer;

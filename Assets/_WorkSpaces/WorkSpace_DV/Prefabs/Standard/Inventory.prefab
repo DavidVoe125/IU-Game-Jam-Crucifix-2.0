@@ -45,11 +45,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baldrianItem: {fileID: 0}
   baldrian: {fileID: 0}
+  baldrianN: 1
+  stinkesockeItem: {fileID: 0}
+  stinkesocke: {fileID: 0}
+  stinkesockeN: 2
+  kaugummiItem: {fileID: 0}
+  kaugummi: {fileID: 0}
+  kaugummiN: 3
+  eheringItem: {fileID: 0}
+  ehering: {fileID: 0}
+  eheringN: 4
+  bild: {fileID: 0}
+  bildN: 5
   itemPrefabs:
   - {fileID: 0}
   - {fileID: 168715138198586792, guid: e152a56405064ba47a9aef748614bb67, type: 3}
+  - {fileID: 8994784736575025901, guid: 48da879fd8d38d04d934649a2ef2ca1a, type: 3}
+  - {fileID: 1344994699319791477, guid: 7e2129a39d1eb1b409884599dd897178, type: 3}
+  - {fileID: 8676624050481608958, guid: 8c274511101abb241a7b15e706199c67, type: 3}
   baldrianC: 0
   baldrianX: 0
   baldrianY: 0
-  StartX: 0
-  StartY: 0
+  stinkesockeC: 0
+  stinkesockeX: 0
+  stinkesockeY: 0
+  kaugummiC: 0
+  kaugummiX: 0
+  kaugummiY: 0
+  eheringC: 0
+  eheringX: 0
+  eheringY: 0
+  bildC: 0
+  bildX: 0
+  bildY: 0

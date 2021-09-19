@@ -94,7 +94,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
             Destroy(stinkesockeItem);
         }
 
-        if (sceneName == "Arbeitszimmer3" && kaugummiC == 1)
+        if (sceneName == "Arbeitszimmer1" && kaugummiC == 1)
         {
             kaugummiItem = GameObject.Find("KaugummiItem");
             Destroy(kaugummiItem);
@@ -134,6 +134,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
 
         if (kaugummiC == 1)
         {
+            print("Kaugummi erstellt");
             var instance = Instantiate(itemPrefabs[kaugummiN],
                 new Vector3(kaugummiX, kaugummiY, 0),
                 transform.rotation);
@@ -269,7 +270,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
         else if (kaugummiC == 2)
         {
             var instance = Instantiate(itemPrefabs[kaugummiN],
-                new Vector3(0, 0, 0),
+                new Vector3(1.367f, -1.53f, 0),
                 transform.rotation);
 
             instance.transform.parent = parentObj;

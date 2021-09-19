@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6356808677488452053}
   - component: {fileID: 8071092504528332331}
   - component: {fileID: 1462729837832771162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stinkesocke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8994784736575025901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.38390237, y: -0.060306504, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.8396226, g: 0.0052805413, b: 0.65379465, a: 1}
   m_FlipX: 0
@@ -145,6 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemGrav: 3
-  minY: -3.16
-  minX: -5
   itemCounter: 2
