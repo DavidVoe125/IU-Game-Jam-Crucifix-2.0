@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public Animator animator;
+    private string sceneName;
 
     // Start is called before the first frame update
     void Start()
     {
+        sceneName = SceneManager.GetActiveScene().name;
         //Die Queue lässt die sätze in der vorgegebenen reihenfolge abspielen
         sentences = new Queue<string>();
     }
@@ -67,5 +70,10 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         Debug.Log("Conversation Endet");
+        if (sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("regalDialogEnde") == 0)
+        {
+            PlayerPrefs.SetInt("regalDialogEnde", 1);
+        }
+
     }
 }
