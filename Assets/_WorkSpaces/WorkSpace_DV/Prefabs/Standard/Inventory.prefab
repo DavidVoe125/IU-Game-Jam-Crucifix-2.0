@@ -64,16 +64,70 @@ MonoBehaviour:
   schraubeItem: {fileID: 0}
   schraube: {fileID: 0}
   schraubeN: 8
+  kuckuck: {fileID: 0}
+  kuckuckN: 9
+  "schl\xFCsselT\xFCr": {fileID: 0}
+  "schl\xFCsselT\xFCrN": 10
+  EH_1: {fileID: 0}
+  EH_1N: 11
+  EH_2: {fileID: 0}
+  EH_2N: 12
+  EH_3: {fileID: 0}
+  EH_3N: 13
+  WZ_1: {fileID: 0}
+  WZ_1N: 14
+  WZ_2: {fileID: 0}
+  WZ_2N: 15
+  WZ_3: {fileID: 0}
+  WZ_3N: 16
+  WZ_4: {fileID: 0}
+  WZ_4N: 17
+  WZ_5: {fileID: 0}
+  WZ_5N: 18
+  WZ_6: {fileID: 0}
+  WZ_6N: 19
+  WZ_7: {fileID: 0}
+  WZ_7N: 20
+  Oma: {fileID: 0}
+  OmaN: 21
+  Katze: {fileID: 0}
+  KatzeN: 22
+  "M\xE4dchen": {fileID: 0}
+  "M\xE4dchenN": 23
+  Junge: {fileID: 0}
+  JungeN: 24
+  "M\xE4dchenF": {fileID: 0}
+  "M\xE4dchenFN": 25
+  JungeF: {fileID: 0}
+  JungeFN: 26
   itemPrefabs:
-  - {fileID: 0}
+  - {fileID: 8978211456339281759, guid: f416f066de03ec34092544c7681ff3c6, type: 3}
   - {fileID: 168715138198586792, guid: e152a56405064ba47a9aef748614bb67, type: 3}
   - {fileID: 8994784736575025901, guid: 48da879fd8d38d04d934649a2ef2ca1a, type: 3}
   - {fileID: 1344994699319791477, guid: 7e2129a39d1eb1b409884599dd897178, type: 3}
   - {fileID: 8676624050481608958, guid: 8c274511101abb241a7b15e706199c67, type: 3}
-  - {fileID: 8676624050481608958, guid: 8c274511101abb241a7b15e706199c67, type: 3}
+  - {fileID: 4961707366421467828, guid: 71bee39ba96a46046befacf25cb1c812, type: 3}
   - {fileID: 8090894387427443234, guid: 2311fe0e7f965bf48affaeca9dd396f9, type: 3}
   - {fileID: 5111953072142100883, guid: bd14cf29487e3e849806240f07bd5612, type: 3}
   - {fileID: 304625489275744663, guid: 5fb8ba97da5757e4ba0438180da5823d, type: 3}
+  - {fileID: 5434350280451543187, guid: 3c91ea02841c9214cbd60d14af43387c, type: 3}
+  - {fileID: 2404306859099581290, guid: 20c67b91da04907498f19dfa8fd4c245, type: 3}
+  - {fileID: 726782695387264710, guid: c0328ee54d1580e43b9f5eed80ed3818, type: 3}
+  - {fileID: 7979780854341209780, guid: 4e14ad89a6a000a43812d9efc144235a, type: 3}
+  - {fileID: 5418386927654590842, guid: d9a9accb3b46f5440b8864991b536ad5, type: 3}
+  - {fileID: 6117324215156120387, guid: 9c8789143af677d45b1d6d6b7bbe18b4, type: 3}
+  - {fileID: 6770891370171203161, guid: 785ede6c4c521234187321f56450a5cc, type: 3}
+  - {fileID: 6263796439294784269, guid: 2748be97bed3d434f8f5998c1e3744c7, type: 3}
+  - {fileID: 1690235295665886108, guid: 88bb94dab5236ca409f31944a919d755, type: 3}
+  - {fileID: 5819714189459254719, guid: 2946e706530220249a810b3d82d5607b, type: 3}
+  - {fileID: 7515946740121969520, guid: 8425f402efca60143a9cfca587c8f2b3, type: 3}
+  - {fileID: 8353313581607577854, guid: 29f80d6c036ba7f478e3f01c9aa2d1b4, type: 3}
+  - {fileID: 431702051067540984, guid: a6adc32e150dd074cb5ad840b944d760, type: 3}
+  - {fileID: 1919870323964726630, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+  - {fileID: 3376961971947539327, guid: ff0cf0463b6af19459ceb6a64b0df422, type: 3}
+  - {fileID: 1667313251387484455, guid: d89c6b4d038577d4d80d6792bcda7198, type: 3}
+  - {fileID: 6486552583973999053, guid: 7f9bf03705cc35c4698393e00dc8fcf6, type: 3}
+  - {fileID: 657258426955156791, guid: 5c34676e89d660145b09c9e8f3198ec7, type: 3}
   baldrianC: 0
   baldrianX: 0
   baldrianY: 0
@@ -92,6 +146,22 @@ MonoBehaviour:
   "schl\xFCsselC": 0
   "schl\xFCsselX": 0
   "schl\xFCsselY": 0
+  "schl\xFCsselT\xFCrC": 0
+  "schl\xFCsselT\xFCrX": 0
+  "schl\xFCsselT\xFCrY": 0
   schraubeC: 0
   schraubeX: 0
   schraubeY: 0
+  kuckuckC: 0
+  kuckuckX: 0
+  kuckuckY: 0
+  eh_1C: 0
+  eh_2C: 0
+  eh_3C: 0
+  wz_1C: 0
+  wz_2C: 0
+  wz_3C: 0
+  wz_4C: 0
+  wz_5C: 0
+  wz_6C: 0
+  wz_7C: 0

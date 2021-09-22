@@ -10,24 +10,18 @@ public class RegalRepair : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("regalRepair") == 1)
+        if (PlayerPrefs.GetInt("regalRepair") == 1 || PlayerPrefs.GetInt("regalRepair") == 2 || PlayerPrefs.GetInt("regalRepair") == 3)
         {
             spriteRenderer.sprite = sprites[1];
-        }
-        else if (PlayerPrefs.GetInt("regalRepair") == 3)
-        {
-            spriteRenderer.sprite = sprites[2];
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("regalRepair") == 1 && PlayerPrefs.GetInt("regalDialogEnde") == 1)
+        if (PlayerPrefs.GetInt("regalRepair") == 1)
         {
-            spriteRenderer.sprite = sprites[2];
-
-            PlayerPrefs.SetInt("regalRepair", 2);
+            spriteRenderer.sprite = sprites[1];
         }
     }
 
@@ -43,10 +37,12 @@ public class RegalRepair : MonoBehaviour
 
             Destroy(col.gameObject);
             PlayerPrefs.SetInt("schraubeCheck", 3);
-        }
-        else
-        {
-            print("fehler");
+
+            PlayerPrefs.SetInt("wz_3Check", 1);
+
+            SoundManagerScript.PlaySound("Schraube");
+            SoundManagerScript.PlaySound("Buch");
+            SoundManagerScript.PlaySound("Katzenschrei");
         }
     }
 }

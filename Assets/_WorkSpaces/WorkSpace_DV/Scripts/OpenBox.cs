@@ -19,10 +19,11 @@ public class OpenBox : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.name == "Schlüssel" && PlayerPrefs.GetInt("isBeingHeld") == 0 && PlayerPrefs.GetInt("boxOpen") == 0)
+        if (col.name == "Schlüssel(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 && PlayerPrefs.GetInt("boxOpen") == 0)
         {
             print("Box geöffnet");
 
+            PlayerPrefs.SetInt("boxOpen", 1);
             PlayerPrefs.SetInt("eheringCheck", 2);
         }
     }

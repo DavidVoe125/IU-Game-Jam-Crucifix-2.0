@@ -223,7 +223,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 33595770}
   sprites:
   - {fileID: 21300000, guid: 322455121c3ccf043814213ae0bea4d0, type: 3}
-  - {fileID: 21300000, guid: 18eb00ca6189110408d97d5822a06d63, type: 3}
   - {fileID: 21300000, guid: a565c8dd32a35e04b8d50afa9e14f02c, type: 3}
 --- !u!50 &33595773
 Rigidbody2D:
@@ -504,6 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 662026244}
   - component: {fileID: 662026243}
+  - component: {fileID: 662026245}
   m_Layer: 0
   m_Name: Wand Wohnzimmer S
   m_TagString: Untagged
@@ -576,6 +576,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &662026245
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662026242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c51415ef94c3b04eb54bfd457583631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &721689036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1919870323964726630, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+  m_PrefabInstance: {fileID: 1591911423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &721689037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721689036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538fc1cc09da6a245b00ae857d51cae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &856485963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,6 +783,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5bcad7ad5e9d474cbce56bf91d0f42f, type: 3}
+--- !u!1001 &1591911423
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919870323964726630, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_Name
+      value: Katze
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
 --- !u!1001 &2029231008
 PrefabInstance:
   m_ObjectHideFlags: 0

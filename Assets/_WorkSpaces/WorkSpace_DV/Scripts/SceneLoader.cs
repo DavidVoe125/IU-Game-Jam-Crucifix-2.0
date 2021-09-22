@@ -15,9 +15,33 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
-    public void GoToLastScene()
+    //public void GoToLastScene()
+    //{
+    //    lastSceneName = PlayerPrefs.GetString("lastSceneName", "MainMenu");
+    //    SceneManager.LoadScene(lastSceneName);
+    //}
+
+    public void LeaveGame()
     {
-        lastSceneName = PlayerPrefs.GetString("lastSceneName", "MainMenu");
-        SceneManager.LoadScene(lastSceneName);
+        Application.Quit();
+    }
+
+    public void StartGame()
+    {
+        if (PlayerPrefs.GetInt("gameStarted") == 0)
+        {
+            PlayerPrefs.SetInt("gameStarted", 1);
+
+            SceneManager.LoadScene("Intro");
+        }
+        else if (PlayerPrefs.GetInt("gameStarted") == 1)
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetString("lastSceneName", "Eingangshalle1"));
+        }
+    }
+
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

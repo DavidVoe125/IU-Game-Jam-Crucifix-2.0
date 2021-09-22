@@ -94,9 +94,5 @@ public class KesselRezept : MonoBehaviour
         {
             print("Hier gibt es nichts mehr zu tun.");
         }
-        else
-        {
-            print("Das gehört hier nicht hin.");
-        }
     }
 }

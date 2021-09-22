@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Intro.unity
+    guid: 0dcfeb6e31ba0834e9db33338e5b8049
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Notiz3.unity
+    guid: a9af73c1251e3594f8ee34e68558396b
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Outro.unity
+    guid: b8c8662f898fe124db1214878e70d950
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/SettingsIngame.unity
+    guid: 665053b849eb2464d85e2f24f0041ba5
+  - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/Start.unity
     guid: 633628637ceebda41a353ee0cb0831f2
   - enabled: 1
@@ -14,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/IntroPic2.unity
     guid: 327777ffebf02304d91324651baa5a84
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Postkarte.unity
+    guid: fd8868217e6e55c409fc7caea522fdd4
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_Olsie/Scenes/IntroPic3.unity
     guid: 94d7cddc5bc172e4eb52d2565477f287
@@ -71,4 +86,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Settings.unity
     guid: 93da50d2e8545c44ea7f164c7975577c
+  - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Notiz.unity
+    guid: 6d69728c337535747aa8d17cfc59981c
   m_configObjects: {}
