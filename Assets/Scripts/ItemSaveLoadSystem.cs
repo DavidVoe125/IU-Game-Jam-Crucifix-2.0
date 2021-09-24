@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scene = UnityEditor.SearchService.Scene;
 
 public class ItemSaveLoadSystem : MonoBehaviour
 { 
@@ -67,6 +65,8 @@ public class ItemSaveLoadSystem : MonoBehaviour
     public int MädchenFN = 25;
     public GameObject JungeF; //26
     public int JungeFN = 26;
+    public GameObject BildGross; //27
+    public int BildGrossN = 27;
 
 
     public GameObject[] itemPrefabs;
@@ -448,6 +448,13 @@ public class ItemSaveLoadSystem : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("wz_6Check", 0);
+        PlayerPrefs.SetInt("wz_6CheckTimes", 0);
+        PlayerPrefs.SetInt("bildGross", 0);
+
+        if (PlayerPrefs.GetInt("ende") == 1)
+        {
+            PlayerPrefs.SetInt("wz_7Close", 1);
+        }
     }
 
     // Update is called once per frame
@@ -587,7 +594,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
             SoundManagerScript.PlaySound("Schlüssel");
         }
 
-        if (PlayerPrefs.GetInt("KellerItems") == 4)
+        if (PlayerPrefs.GetInt("KesselItems") == 4)
         {
             var instance = Instantiate(itemPrefabs[bildN],
                 new Vector3(4.73f, -1.71f, 0),
@@ -597,7 +604,7 @@ public class ItemSaveLoadSystem : MonoBehaviour
             bild = instance;
 
             PlayerPrefs.SetInt("bildCheck", 1);
-            PlayerPrefs.SetInt("KellerItems", 5);
+            PlayerPrefs.SetInt("KesselItems", 5);
             PlayerPrefs.SetInt("vorhangFreigabe", 1);
         }
 
@@ -684,8 +691,11 @@ public class ItemSaveLoadSystem : MonoBehaviour
                 transform.rotation);
         }
 
-        if (sceneName == "Wohnzimmer1" && PlayerPrefs.GetInt("wz_6Check") == 1)
+        if (sceneName == "Wohnzimmer1" && PlayerPrefs.GetInt("wz_6Check") == 1 && PlayerPrefs.GetInt("wz_6CheckTimes") == 0)
         {
+            PlayerPrefs.SetInt("wz_6Check", 0);
+            PlayerPrefs.SetInt("wz_6CheckTimes", 1);
+
             var instance = Instantiate(itemPrefabs[WZ_6N],
                 new Vector3(2.2853f, -1.2053f, 0),
                 transform.rotation);
@@ -723,6 +733,15 @@ public class ItemSaveLoadSystem : MonoBehaviour
                 transform.rotation);
 
             PlayerPrefs.SetInt("schlüsselFreigabe", 2);
+        }
+
+        if (PlayerPrefs.GetInt("bildGross") == 1)
+        {
+            PlayerPrefs.SetInt("bildGross", 2);
+
+            var instance = Instantiate(itemPrefabs[BildGrossN],
+                new Vector3(0.6f, 1.12f, 0),
+                transform.rotation);
         }
     }
 }

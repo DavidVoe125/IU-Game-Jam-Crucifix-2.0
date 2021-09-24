@@ -22,9 +22,6 @@ public class SaveScene : MonoBehaviour
 
     public void OpenSettings()
     {
-        sceneName = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetString("lastSceneName", sceneName);
-
         SceneManager.LoadScene("SettingsIngame");
     }
     public void GoToLastScene()

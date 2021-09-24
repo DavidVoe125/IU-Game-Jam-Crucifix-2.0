@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/MainMenu.unity
+    guid: 636a3e63b39354b46bd4104062fc2a27
+  - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Intro.unity
     guid: 0dcfeb6e31ba0834e9db33338e5b8049
   - enabled: 1
@@ -77,9 +80,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/Credits.unity
     guid: c1a39e8c4a23bfb43a42b116132bcc9d
-  - enabled: 1
-    path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/MainMenu.unity
-    guid: 636a3e63b39354b46bd4104062fc2a27
   - enabled: 1
     path: Assets/_WorkSpaces/WorkSpace_DV/Scenes/OpenBox.unity
     guid: ca57582b69f4f964ba19c247817c807c

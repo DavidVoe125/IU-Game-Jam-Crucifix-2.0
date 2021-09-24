@@ -28,9 +28,6 @@ public class Outro : MonoBehaviour
     {
         mainCameraObj = GameObject.Find("Main Camera");
         mainCamera = mainCameraObj.GetComponent<Camera>();
-        
-        SoundManagerScript.PlaySound("Endscene12");
-        //(Camera) GameObject.FindObjectOfType(typeof(Camera))
     }
 
     // Update is called once per frame
@@ -77,8 +74,7 @@ public class Outro : MonoBehaviour
                         new Vector3(0, -0, 0),
                         transform.rotation);
 
-                    SoundManagerScript.PlaySound("Stop");
-                    SoundManagerScript.PlaySound("Endscene34");
+                    SoundManagerBackgroundScript.PlaySound("Endscene34");
                 }
                 else if (hit.collider.gameObject.name == "Endscene3(Clone)")
                 {
@@ -96,8 +92,7 @@ public class Outro : MonoBehaviour
                         new Vector3(0, -0, 0),
                         transform.rotation);
 
-                    SoundManagerScript.PlaySound("Stop");
-                    SoundManagerScript.PlaySound("Endscene56");
+                    SoundManagerBackgroundScript.PlaySound("Endscene56");
                 }
                 else if (hit.collider.gameObject.name == "Endscene5(Clone)")
                 {
@@ -116,8 +111,7 @@ public class Outro : MonoBehaviour
                         new Vector3(0, 0, 0),
                         transform.rotation);
 
-                    SoundManagerScript.PlaySound("Stop");
-                    SoundManagerScript.PlaySound("Outro");
+                    SoundManagerBackgroundScript.PlaySound("Outro");
                 }
             }
         }
@@ -129,10 +123,17 @@ public class Outro : MonoBehaviour
                 new Vector3(0, 0, 0),
                 transform.rotation);
 
-            SoundManagerScript.PlaySound("Stop");
-            SoundManagerScript.PlaySound("Outro");
+            SoundManagerBackgroundScript.PlaySound("Outro");
         }
-        
+
+        if (PlayerPrefs.GetInt("instanceOutro") == 1)
+        {
+            PlayerPrefs.SetInt("instanceOutro", 0);
+
+            var instance = Instantiate(Outro1,
+                new Vector3(0, 0, 0),
+                transform.rotation);
+        }
 
         if (PlayerPrefs.GetInt("startOutro") == 1)
         { 
@@ -158,11 +159,13 @@ public class Outro : MonoBehaviour
             else if (sceneNum == 2 && Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene("Credits");
+                PlayerPrefs.DeleteAll();
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 SceneManager.LoadScene("Credits");
+                PlayerPrefs.DeleteAll();
             }
         }
     }

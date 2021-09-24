@@ -15,7 +15,7 @@ public class Intro : MonoBehaviour
 
     void Start()
     {
-        SoundManagerScript.PlaySound("Intro");
+        
     }
 
     // Update is called once per frame

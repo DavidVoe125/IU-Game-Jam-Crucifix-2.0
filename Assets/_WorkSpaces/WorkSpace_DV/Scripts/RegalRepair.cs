@@ -42,7 +42,7 @@ public class RegalRepair : MonoBehaviour
 
             SoundManagerScript.PlaySound("Schraube");
             SoundManagerScript.PlaySound("Buch");
-            SoundManagerScript.PlaySound("Katzenschrei");
+            SoundManagerScript.PlaySound("KatzenschreiLoop");
         }
     }
 }

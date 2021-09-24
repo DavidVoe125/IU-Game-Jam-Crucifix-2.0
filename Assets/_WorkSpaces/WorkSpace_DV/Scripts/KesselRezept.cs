@@ -55,6 +55,8 @@ public class KesselRezept : MonoBehaviour
 
             Destroy(col.gameObject);
             PlayerPrefs.SetInt("baldrianCheck", 3);
+
+            SoundManagerScript.PlaySound("Blubbern");
         }
         else if (col.name == "Stinkesocke(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 1)
@@ -67,6 +69,8 @@ public class KesselRezept : MonoBehaviour
 
             Destroy(col.gameObject);
             PlayerPrefs.SetInt("stinkesockeCheck", 3);
+
+            SoundManagerScript.PlaySound("Blubbern");
         }
         else if (col.name == "Kaugummi(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 2)
@@ -78,6 +82,8 @@ public class KesselRezept : MonoBehaviour
             PlayerPrefs.SetInt("KesselItems", 3);
             Destroy(col.gameObject);
             PlayerPrefs.SetInt("kaugummiCheck", 3);
+
+            SoundManagerScript.PlaySound("Blubbern");
         }
         else if (col.name == "Ehering(Clone)" && PlayerPrefs.GetInt("isBeingHeld") == 0 &&
                  PlayerPrefs.GetInt("KesselItems") == 3)
@@ -89,10 +95,14 @@ public class KesselRezept : MonoBehaviour
             PlayerPrefs.SetInt("KesselItems", 4);
             Destroy(col.gameObject);
             PlayerPrefs.SetInt("eheringCheck", 3);
+
+            SoundManagerScript.PlaySound("Blubbern");
         }
         else if (PlayerPrefs.GetInt("KesselItems") == 5)
         {
             print("Hier gibt es nichts mehr zu tun.");
         }
+
+
     }
 }

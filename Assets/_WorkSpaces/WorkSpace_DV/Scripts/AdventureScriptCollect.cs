@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class AdventureScriptCollect : MonoBehaviour
@@ -92,7 +93,7 @@ public class AdventureScriptCollect : MonoBehaviour
                     PlayerPrefs.SetInt("regalRepair", 3);
                     PlayerPrefs.SetInt("wz_4Check", 1);
                     PlayerPrefs.SetInt("katzeJammern", 0);
-                    SoundManagerScript.PlaySound("Katzenschnurren");
+                    SoundManagerScript.PlaySound("KatzenschnurrenLoop");
 
                     buchItem = hit.collider.gameObject;
                     Destroy(buchItem);
@@ -202,22 +203,24 @@ public class AdventureScriptCollect : MonoBehaviour
                     PlayerPrefs.SetInt("wz_5Check", 1);
 
                     SoundManagerScript.PlaySound("Stop");
-                    SoundManagerScript.PlaySound("Wohnzimmer");
+                    SoundManagerScript.PlaySound("KatzenschnurrenLoop");
 
                     Destroy(hit.collider.gameObject.GetComponent<Animator>());
                 }
                 else if (hit.collider.gameObject.name == "WZ_5(Clone)")
                 {
+                    SoundManagerScript.PlaySound("Stop");
+
                     Destroy(hit.collider.gameObject);
-                    Destroy(GameObject.Find("KatzeIdle(Clone)"));
+                    Destroy(GameObject.Find("Katze(Clone)"));
                 }
-                else if (hit.collider.gameObject.name == "Spiegel" && PlayerPrefs.GetInt("vorhangFreigabe") == 0 && PlayerPrefs.GetInt("wz_6Check") == 0)
+                else if (hit.collider.gameObject.name == "Spiegel" && PlayerPrefs.GetInt("vorhangFreigabe") == 0 && PlayerPrefs.GetInt("wz_6Check") == 0 && PlayerPrefs.GetInt("wz_6CheckTimes") == 0)
                 {
                     PlayerPrefs.SetInt("wz_6Check", 1);
                 }
                 else if (hit.collider.gameObject.name == "WZ_6(Clone)")
                 {
-                    PlayerPrefs.SetInt("wz_6Check", 0);
+                    PlayerPrefs.SetInt("wz_6CheckTimes", 0);
 
                     Destroy(hit.collider.gameObject);
                     Destroy(GameObject.Find("Oma(Clone)"));
@@ -233,12 +236,24 @@ public class AdventureScriptCollect : MonoBehaviour
                 }
                 else if (hit.collider.gameObject.name == "WZ_7(Clone)")
                 {
+                    PlayerPrefs.SetInt("wz_7Close", 1);
+
                     Destroy(hit.collider.gameObject);
                     Destroy(GameObject.Find("Oma(Clone)"));
                 }
-                else if (hit.collider.gameObject.name == "Spiegel" && PlayerPrefs.GetInt("vorhangFreigabe") == 1 && PlayerPrefs.GetInt("ende") == 1)
+                else if (hit.collider.gameObject.name == "Spiegel" && PlayerPrefs.GetInt("vorhangFreigabe") == 1 && PlayerPrefs.GetInt("ende") == 1 && PlayerPrefs.GetInt("wz_7Close") == 1)
                 {
                     SceneManager.LoadScene("Outro");
+                }
+                else if (hit.collider.gameObject.name == "Bild(Clone)" && PlayerPrefs.GetInt("bildGross") == 0)
+                {
+                    PlayerPrefs.SetInt("bildGross", 1);
+                }
+                else if (hit.collider.gameObject.name == "BildGross(Clone)")
+                {
+                    Destroy(hit.collider.gameObject);
+
+                    PlayerPrefs.SetInt("bildGross", 0);
                 }
             }
             else

@@ -1,32 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip introSound, outroSound, arbeitszimmerSound, creditsSound, eingangshalleSound, endscene12Sound, endscene34Sound, endscene56Sound, mainMenuSound, wohnzimmerSound, 
-        türSound, baldrianSound, blubbernSound, kaugummiSound, papierSound, standuhrSound, stinkesockeSound, clockFSound, clockRSound, wanduhrSound, buchSound, eheringSound, kaminfeuerSound,
-        katzenSchnurrenSound, katzenSchreiSound, lichtSound, omaSound, schlüsselSound, schraubeSound, wz7Sound, clockTSound;
+    public static AudioClip türSound, baldrianSound, blubbernSound, kaugummiSound, papierSound, standuhrSound, stinkesockeSound, 
+        clockFSound, clockRSound, wanduhrSound, buchSound, eheringSound, kaminfeuerSound, katzenSchnurrenSound, katzenSchreiSound, 
+        lichtSound, omaSound, schlüsselSound, schraubeSound, wz7Sound, clockTSound;
     private static AudioSource audioSrc;
     private string sceneName;
+    private static GameObject SoundManagerBackgroundOld;
 
     // Start is called before the first frame update
     void Start()
     {
+        sceneName = SceneManager.GetActiveScene().name;
+
         audioSrc = GetComponent<AudioSource>();
 
-        introSound = Resources.Load<AudioClip>("Sounds/Intro");
-        outroSound = Resources.Load<AudioClip>("Sounds/Outro");
-        arbeitszimmerSound = Resources.Load<AudioClip>("Sounds/Arbeitszimmer");
-        creditsSound = Resources.Load<AudioClip>("Sounds/Credits");
-        eingangshalleSound = Resources.Load<AudioClip>("Sounds/Eingangshalle");
-        endscene12Sound = Resources.Load<AudioClip>("Sounds/Endscene12");
-        endscene34Sound = Resources.Load<AudioClip>("Sounds/Endscene34");
-        endscene56Sound = Resources.Load<AudioClip>("Sounds/Endscene56");
-        mainMenuSound = Resources.Load<AudioClip>("Sounds/Main Menu");
-        wohnzimmerSound = Resources.Load<AudioClip>("Sounds/Wohnzimmer");
         türSound = Resources.Load<AudioClip>("Sounds/Türsound");
         baldrianSound = Resources.Load<AudioClip>("Sounds/Baldrian");
         blubbernSound = Resources.Load<AudioClip>("Sounds/Blubbern");
@@ -49,66 +41,39 @@ public class SoundManagerScript : MonoBehaviour
         wz7Sound = Resources.Load<AudioClip>("Sounds/WZ_6Sound");
         clockTSound = Resources.Load<AudioClip>("Sounds/ClockT");
 
-        sceneName = SceneManager.GetActiveScene().name;
-
-        if (sceneName == "Arbeitszimmer1" || sceneName == "Arbeitszimmer2" || sceneName == "Arbeitszimmer3" || sceneName == "Arbeitszimmer4" || sceneName == "Notiz")
+        if (sceneName == "Arbeitszimmer1")
         {
-            SoundManagerScript.PlaySound("Arbeitszimmer");
-
-            if (sceneName == "Arbeitszimmer1")
-            {
-                SoundManagerScript.PlaySound("Wanduhr");
-            }
-            else if (sceneName == "Arbeitszimmer2")
-            {
-                SoundManagerScript.PlaySound("Blubbern");
-            }
+            SoundManagerScript.PlaySound("WanduhrLoop");
         }
-        if (sceneName == "Eingangshalle1" || sceneName == "Eingangshalle2" || sceneName == "Eingangshalle3" || sceneName == "Eingangshalle4" || sceneName == "Notiz3" || sceneName == "Clock" || sceneName == "Postkarte")
+        else if (sceneName == "Notiz" || sceneName == "Notiz3")
         {
-            SoundManagerScript.PlaySound("Eingangshalle");
-
-            if (sceneName == "Notiz" || sceneName == "Notiz3")
-            {
-                SoundManagerScript.PlaySound("Papiersound");
-            }
-
-            if (sceneName == "Eingangshalle1" && PlayerPrefs.GetInt("ClockR") == 1)
-            {
-                PlayerPrefs.SetInt("ClockR", 0);
-
-                SoundManagerScript.PlaySound("ClockR");
-            }
+            SoundManagerScript.PlaySound("Papiersound");
         }
-        if (sceneName == "Wohnzimmer1" || sceneName == "Wohnzimmer2" || sceneName == "Wohnzimmer3" || sceneName == "Wohnzimmer4")
+        else if (sceneName == "Eingangshalle1" && PlayerPrefs.GetInt("ClockR") == 1)
         {
-            SoundManagerScript.PlaySound("Wohnzimmer");
+            PlayerPrefs.SetInt("ClockR", 0);
 
-            if (sceneName == "Wohnzimmer2")
-            {
-                SoundManagerScript.PlaySound("Kaminfeuer");
-            }
-            else if (sceneName == "Wohnzimmer4" && PlayerPrefs.GetInt("lampRepair") == 0)
-            {
-                SoundManagerScript.PlaySound("Licht");
-            }
-
-            if (sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("RegalRepair") == 0 || sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("RegalRepair") == 3)
-            {
-                SoundManagerScript.PlaySound("Katzenschnurren");
-            }
-            else if (sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("RegalRepair") == 2)
-            {
-                SoundManagerScript.PlaySound("Katzenschrei");
-            }
+            SoundManagerScript.PlaySound("ClockR");
         }
-        if (sceneName == "MainMenu" || sceneName == "Settings" || sceneName == "SettingsIngame")
+        if (sceneName == "Wohnzimmer2")
         {
-            SoundManagerScript.PlaySound("Main Menu");
+            SoundManagerScript.PlaySound("KaminfeuerLoop");
         }
-        if (sceneName == "Credits")
+        else if (sceneName == "Wohnzimmer4" && PlayerPrefs.GetInt("lampRepair") != 2)
         {
-            SoundManagerScript.PlaySound("Credits");
+            SoundManagerScript.PlaySound("LichtLoop");
+        }
+        if (sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("regalRepair") != 2)
+        {
+            SoundManagerScript.PlaySound("KatzenschnurrenLoop");
+        }
+        else if (sceneName == "Wohnzimmer3" && PlayerPrefs.GetInt("regalRepair") == 2)
+        {
+            SoundManagerScript.PlaySound("KatzenschreiLoop");
+        }
+        else if (sceneName == "Wohnzimmer1" && PlayerPrefs.GetInt("ende") == 1)
+        {
+            SoundManagerScript.PlaySound("WZ_7Sound");
         }
     }
 
@@ -122,37 +87,6 @@ public class SoundManagerScript : MonoBehaviour
     {
         switch (clip)
         {
-            case "Intro":
-                print("test");
-                audioSrc.PlayOneShot(introSound);
-                break;
-            case "Outro":
-                audioSrc.PlayOneShot(outroSound);
-                break;
-            case "Arbeitszimmer":
-                audioSrc.PlayOneShot(arbeitszimmerSound);
-                break;
-            case "Credits":
-                audioSrc.PlayOneShot(creditsSound);
-                break;
-            case "Eingangshalle":
-                audioSrc.PlayOneShot(eingangshalleSound);
-                break;
-            case "Endscene12":
-                audioSrc.PlayOneShot(endscene12Sound);
-                break;
-            case "Endscene34":
-                audioSrc.PlayOneShot(endscene34Sound);
-                break;
-            case "Endscene56":
-                audioSrc.PlayOneShot(endscene56Sound);
-                break;
-            case "Main Menu":
-                audioSrc.PlayOneShot(mainMenuSound);
-                break;
-            case "Wohnzimmer":
-                audioSrc.PlayOneShot(wohnzimmerSound);
-                break;
             case "Türsound":
                 audioSrc.PlayOneShot(türSound);
                 break;
@@ -177,6 +111,12 @@ public class SoundManagerScript : MonoBehaviour
             case "Wanduhr":
                 audioSrc.PlayOneShot(wanduhrSound);
                 break;
+            case "WanduhrLoop":
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = wanduhrSound;
+                audioSrc.Play();
+                break;
             case "Buch":
                 audioSrc.PlayOneShot(buchSound);
                 break;
@@ -186,14 +126,38 @@ public class SoundManagerScript : MonoBehaviour
             case "Kaminfeuer":
                 audioSrc.PlayOneShot(kaminfeuerSound);
                 break;
+            case "KaminfeuerLoop":
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = kaminfeuerSound;
+                audioSrc.Play();
+                break;
             case "Katzenschnurren":
                 audioSrc.PlayOneShot(katzenSchnurrenSound);
+                break;
+            case "KatzenschnurrenLoop":
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = katzenSchnurrenSound;
+                audioSrc.Play();
                 break;
             case "Katzenschrei":
                 audioSrc.PlayOneShot(katzenSchreiSound);
                 break;
+            case "KatzenschreiLoop":
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = katzenSchreiSound;
+                audioSrc.Play();
+                break;
             case "Licht":
                 audioSrc.PlayOneShot(lichtSound);
+                break;
+            case "LichtLoop":
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = lichtSound;
+                audioSrc.Play();
                 break;
             case "Oma":
                 audioSrc.PlayOneShot(omaSound);
@@ -205,6 +169,13 @@ public class SoundManagerScript : MonoBehaviour
                 audioSrc.PlayOneShot(schraubeSound);
                 break;
             case "WZ_7Sound":
+                SoundManagerBackgroundOld = GameObject.Find("SoundManagerBackground(Clone)");
+                Destroy(SoundManagerBackgroundOld);
+                audioSrc.Stop();
+                audioSrc.loop = true;
+                audioSrc.clip = wz7Sound;
+                audioSrc.Play();
+                audioSrc.PlayOneShot(omaSound);
                 audioSrc.PlayOneShot(wz7Sound);
                 break;
             case "ClockF":

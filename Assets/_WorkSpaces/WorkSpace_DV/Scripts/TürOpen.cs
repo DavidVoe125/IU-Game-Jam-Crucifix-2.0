@@ -30,11 +30,12 @@ public class TürOpen : MonoBehaviour
         {
             spriteRenderer.sprite = sprites[1];
         }
-        else if (PlayerPrefs.GetInt("arbWohTürOpen") == 1 && sceneName == "Arbeitzimmer3" && this.gameObject.name == "ArbWohTür")
+        else if (PlayerPrefs.GetInt("arbWohTürOpen") == 1 && sceneName == "Wohnzimmer1")
         {
             spriteRenderer.sprite = sprites[1];
         }
-        else if (PlayerPrefs.GetInt("arbWohTürOpen") == 1 && sceneName == "Wohnzimmer1")
+
+        if (PlayerPrefs.GetInt("arbWohTürOpen") == 1 && sceneName == "Arbeitszimmer3" && this.gameObject.name == "ArbWohTür")
         {
             spriteRenderer.sprite = sprites[1];
         }

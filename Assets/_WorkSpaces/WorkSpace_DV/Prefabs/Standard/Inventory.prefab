@@ -100,6 +100,8 @@ MonoBehaviour:
   "M\xE4dchenFN": 25
   JungeF: {fileID: 0}
   JungeFN: 26
+  BildGross: {fileID: 0}
+  BildGrossN: 27
   itemPrefabs:
   - {fileID: 8978211456339281759, guid: f416f066de03ec34092544c7681ff3c6, type: 3}
   - {fileID: 168715138198586792, guid: e152a56405064ba47a9aef748614bb67, type: 3}
@@ -128,6 +130,7 @@ MonoBehaviour:
   - {fileID: 1667313251387484455, guid: d89c6b4d038577d4d80d6792bcda7198, type: 3}
   - {fileID: 6486552583973999053, guid: 7f9bf03705cc35c4698393e00dc8fcf6, type: 3}
   - {fileID: 657258426955156791, guid: 5c34676e89d660145b09c9e8f3198ec7, type: 3}
+  - {fileID: 493621497109408239, guid: 214e104b9bf41f64ba68d7e63afb17ab, type: 3}
   baldrianC: 0
   baldrianX: 0
   baldrianY: 0
