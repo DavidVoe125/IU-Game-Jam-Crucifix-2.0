@@ -46,6 +46,10 @@ public class LastScene : MonoBehaviour
         {
 
         }
+        else if (sceneName == "Wohnzimmer1" && lastSceneName == "SettingsIngame" && PlayerPrefs.GetInt("ende") == 1)
+        {
+
+        }
         else
         {
             SoundManagerBackgroundOld = GameObject.Find("SoundManagerBackground(Clone)");
