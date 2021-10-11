@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oma
       objectReference: {fileID: 0}
+    - target: {fileID: 431702051067540990, guid: a6adc32e150dd074cb5ad840b944d760, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fe86b326d180484aa3d2fd83ec4ff62, type: 2}
     - target: {fileID: 431702051067540991, guid: a6adc32e150dd074cb5ad840b944d760, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -314,6 +318,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1667313251387484453, guid: d89c6b4d038577d4d80d6792bcda7198, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fe86b326d180484aa3d2fd83ec4ff62, type: 2}
     - target: {fileID: 1667313251387484455, guid: d89c6b4d038577d4d80d6792bcda7198, type: 3}
       propertyPath: m_Name
       value: Junge
@@ -327,6 +335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1919870323964726616, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fe86b326d180484aa3d2fd83ec4ff62, type: 2}
     - target: {fileID: 1919870323964726617, guid: 9b93f065ea969c5459ec6274e2deef5e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -428,6 +440,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3376961971947539321, guid: ff0cf0463b6af19459ceb6a64b0df422, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fe86b326d180484aa3d2fd83ec4ff62, type: 2}
     - target: {fileID: 3376961971947539327, guid: ff0cf0463b6af19459ceb6a64b0df422, type: 3}
       propertyPath: m_Name
       value: Maedchen
